@@ -1,0 +1,27 @@
+dummy_classifier <- function(y, strategy = "proportional", constant = NULL, random_state = NULL) {
+  if (!strategy %in% c("stratified", "most_frequent", "proportional", "uniform", "constant")) {
+    stop("Invalid strategy. Choose from 'stratified', 'most_frequent', 'proportional', 'uniform', or 'constant'.")
+  }
+  
+  if (strategy == "constant" & is.null(constant)) {
+    stop("For constant strategy, you need to provide a constant value.")
+  }
+  
+  function(y1 = y, X= data.frame(fake_pred = rep(0, length(y)))) {
+    model <- list()
+    model$strategy <- strategy
+    model$constant <- constant
+    model$y1 <- as.factor(y1)
+    model$classes <- levels(y1)
+    model$n_classes <- length(model$classes)
+    model$class_prior <- table(y1) / length(y1)
+    model$random_state <- random_state
+    
+    if (strategy == "most_frequent") {
+      model$most_frequent <- levels(y1)[which.max(table(y1))]
+    }
+    
+    return(model)
+  }
+}
+
