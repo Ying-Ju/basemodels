@@ -1,26 +1,24 @@
 {
-    "id": "36F0D1AE",
-    "path": "~/basemodels/R/predict_dummy_regressor.R",
+    "id": "8EB69014",
+    "path": "~/GitHub/basemodels/R/predict_dummy_regressor.R",
     "project_path": "R/predict_dummy_regressor.R",
     "type": "r_source",
-    "hash": "2933974463",
+    "hash": "65301223",
     "contents": "",
     "dirty": false,
-    "created": 1686359948919.0,
+    "created": 1686364274094.0,
     "source_on_save": false,
-    "relative_order": 8,
+    "relative_order": 5,
     "properties": {
         "source_window_id": "",
-        "Source": "Source",
-        "cursorPosition": "17,5",
-        "scrollLine": "12"
+        "Source": "Source"
     },
     "folds": "",
-    "lastKnownWriteTime": 1686362205,
+    "lastKnownWriteTime": 1686363699,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1686362205100,
+    "last_content_update": 1686363699,
     "read_only": false,
     "read_only_alternatives": []
 }

@@ -13,7 +13,7 @@
 #' train_data <- iris[index,]
 #' test_data <- iris[-index,]
 #'
-#' # Make predictions using the trained dummy classifier
+#' # Make predictions using the trained dummy regressor
 #' reg_model <- dummy_regressor(train_data$Sepal.Length, strategy = "median")
 #' y_hat <- predict_dummy_regressor(reg_model, test_data)
 #' # Find mean squared error

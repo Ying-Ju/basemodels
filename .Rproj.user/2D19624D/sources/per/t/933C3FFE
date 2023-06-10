@@ -1,9 +1,9 @@
 {
     "id": "933C3FFE",
-    "path": "~/basemodels/NAMESPACE",
+    "path": "~/GitHub/basemodels/NAMESPACE",
     "project_path": "NAMESPACE",
     "type": "r_namespace",
-    "hash": "1524203122",
+    "hash": "1735887873",
     "contents": "",
     "dirty": false,
     "created": 1686328978121.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "7,0",
+        "cursorPosition": "9,0",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1686361857,
+    "lastKnownWriteTime": 1686329253,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1686361857,
+    "last_content_update": 1686329253,
     "read_only": true,
     "read_only_alternatives": []
 }

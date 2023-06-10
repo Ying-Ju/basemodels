@@ -1,6 +1,6 @@
 {
     "id": "B221B947",
-    "path": "~/basemodels/R/methods.R",
+    "path": "~/GitHub/basemodels/R/methods.R",
     "project_path": "R/methods.R",
     "type": "r_source",
     "hash": "998698676",
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "78,34",
-        "scrollLine": "65"
+        "cursorPosition": "17,15",
+        "scrollLine": "53"
     },
     "folds": "",
     "lastKnownWriteTime": 1686362214,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1686362214980,
+    "last_content_update": 1686362214,
     "read_only": false,
     "read_only_alternatives": []
 }
