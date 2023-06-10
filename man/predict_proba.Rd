@@ -17,7 +17,3 @@ a probability matrix.
 \description{
 probabilities for predicting classes
 }
-\examples{
-model <- dummy_classifier(strategy = "uniform", random_state = 2024)(iris, iris$Species)
-predict_proba(model, iris)
-}

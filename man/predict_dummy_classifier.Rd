@@ -18,6 +18,17 @@ predicted values for the response variable.
 dummy classifier predictor
 }
 \examples{
-model <- dummy_classifier(strategy = "uniform", random_state = 2024)(iris[,-5], iris$Species)
-predict_dummy_classifier(model, iris[,-5])
+# Split the data into training and testing sets
+set.seed(2023)
+index <- sample(1:nrow(iris), nrow(iris) * 0.8)
+train_data <- iris[index,]
+test_data <- iris[-index,]
+dummy_model <- dummy_classifier(train_data$Species, strategy = "proportional", random_state = 2024)
+
+# Make predictions using the trained dummy classifier
+pred_vec <- predict_dummy_classifier(dummy_model, test_data)
+
+# Evaluate the performance of the dummy classifier
+conf_matrix <- caret::confusionMatrix(pred_vec, test_data$Species)
+print(conf_matrix)
 }

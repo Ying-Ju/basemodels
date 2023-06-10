@@ -2,15 +2,18 @@
 % Please edit documentation in R/dummy_classifier.R
 \name{dummy_classifier}
 \alias{dummy_classifier}
-\title{dummy classifier to a categorical variable}
+\title{dummy classifier for a categorical variable.}
 \usage{
 dummy_classifier(
+  y,
   strategy = "proportional",
   constant = NULL,
   random_state = NULL
 )
 }
 \arguments{
+\item{y}{a categorical vector}
+
 \item{strategy}{a strategy from "constant", "most_frequent", "proportional", "uniform", or "stratified".}
 
 \item{constant}{a constant value for the constant strategy.}
@@ -21,8 +24,14 @@ dummy_classifier(
 a list
 }
 \description{
-dummy classifier to a categorical variable
+dummy classifier for a categorical variable.
 }
 \examples{
-model <- dummy_classifier(strategy = "uniform", random_state = 2024)(iris[,-5], iris$Species)
+# Split the data into training and testing sets
+set.seed(2023)
+index <- sample(1:nrow(iris), nrow(iris) * 0.8)
+train_data <- iris[index,]
+test_data <- iris[-index,]
+dummy_model <- dummy_classifier(train_data$Species, strategy = "proportional", random_state = 2024)
+dummy_model
 }

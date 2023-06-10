@@ -4,11 +4,6 @@
 #' @param X a data frame.
 #'
 #' @return a probability matrix.
-#' @export
-#'
-#' @examples
-#' model <- dummy_classifier(strategy = "uniform", random_state = 2024)(iris, iris$Species)
-#' predict_proba(model, iris)
 predict_proba <- function(model, X) {
   y <- model$y
   # Extract necessary parameters from the model object

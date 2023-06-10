@@ -27,5 +27,7 @@ reg_model <- caret::train(Sepal.Length ~ ., data = train_data,
                                strategy = "median",
                                trControl = ctrl1)
 y_hat <- predict(reg_model, test_data)
+# Find mean squared error
+mean((test_data$Sepal.Length-y_hat)^2)
 }
 \keyword{datasets}

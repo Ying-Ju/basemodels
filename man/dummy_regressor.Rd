@@ -2,11 +2,13 @@
 % Please edit documentation in R/dummy_regressor.R
 \name{dummy_regressor}
 \alias{dummy_regressor}
-\title{dummy regressor}
+\title{dummy regressor for a numerical variable.}
 \usage{
-dummy_regressor(strategy = "mean", quantile = NULL, constant = NULL)
+dummy_regressor(y, strategy = "mean", quantile = NULL, constant = NULL)
 }
 \arguments{
+\item{y}{a numerical vector.}
+
 \item{strategy}{a strategy from "constant", "mean", "median", or "quantile".}
 
 \item{quantile}{used when using the quantile strategy. It is a value between 0 and 1.}
@@ -17,8 +19,14 @@ dummy_regressor(strategy = "mean", quantile = NULL, constant = NULL)
 a list containing information of the model.
 }
 \description{
-dummy regressor
+dummy regressor for a numerical variable.
 }
 \examples{
-dummy_regressor(strategy = "mean")(iris[,-1], iris[,1])
+# Split the data into training and testing sets
+set.seed(2023)
+index <- sample(1:nrow(iris), nrow(iris) * 0.8)
+train_data <- iris[index,]
+test_data <- iris[-index,]
+reg_model <- dummy_regressor(train_data$Sepal.Length, strategy = "median")
+reg_model
 }

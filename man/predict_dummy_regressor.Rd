@@ -18,6 +18,15 @@ the predicted values
 dummy regressor predictor
 }
 \examples{
-model <- dummy_regressor(strategy = "mean")(iris[,-1], iris[,1])
-predict_dummy_regressor(model, iris[,-1])
+#' # Split the data into training and testing sets
+set.seed(2023)
+index <- sample(1:nrow(iris), nrow(iris) * 0.8)
+train_data <- iris[index,]
+test_data <- iris[-index,]
+
+# Make predictions using the trained dummy classifier
+reg_model <- dummy_regressor(train_data$Sepal.Length, strategy = "median")
+y_hat <- predict_dummy_regressor(reg_model, test_data)
+# Find mean squared error
+mean((test_data$Sepal.Length-y_hat)^2)
 }
