@@ -1,6 +1,6 @@
 #' dummy classifier for a categorical variable.
 #'
-#' @param y a categorical vector
+#' @param y a categorical vector, containing the outcomes of interest
 #' @param strategy a strategy from "constant", "most_frequent", "proportional", "uniform", or "stratified".
 #' @param constant a constant value for the constant strategy.
 #' @param random_state a random seed.

@@ -12,7 +12,7 @@ dummy_classifier(
 )
 }
 \arguments{
-\item{y}{a categorical vector}
+\item{y}{a categorical vector, containing the outcomes of interest}
 
 \item{strategy}{a strategy from "constant", "most_frequent", "proportional", "uniform", or "stratified".}
 
