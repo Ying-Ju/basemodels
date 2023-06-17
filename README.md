@@ -1,7 +1,8 @@
 # basemodels: Baseline Models for Classification and Regression
 [![CRAN](https://www.r-pkg.org/badges/version/basemodels)](https://cran.r-project.org/web/packages/basemodels/index.html)
 [![CRAN](https://cranlogs.r-pkg.org/badges/grand-total/basemodels)](https://cran.r-project.org/web/packages/basemodels/index.html)
- This R package, `basemodels`, provides equivalent functions for the dummy classifier and regressor used in Python's sci-kit library with some modifications. Our goal is to allow <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/r-project.svg" width="15" height="15"> users to **easily identify baseline performance for their classification and regression problems**. Our baseline models use no predictors, and are useful in cases of class imbalance, multi-class classification, and when users want to quickly identify how much improvement their statistical and machine learning models over several baseline models. We use a "better" default (proportional guessing) for the dummy classifier than the Python implementation ("prior", which is the most frequent class in the training set).
+
+This R package, `basemodels`, provides equivalent functions for the dummy classifier and regressor used in Python's sci-kit library with some modifications. Our goal is to allow <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/r-project.svg" width="15" height="15"> users to **easily identify baseline performance for their classification and regression problems**. Our baseline models use no predictors, and are useful in cases of class imbalance, multi-class classification, and when users want to quickly identify how much improvement their statistical and machine learning models over several baseline models. We use a "better" default (proportional guessing) for the dummy classifier than the Python implementation ("prior", which is the most frequent class in the training set).
 
 # Example
 
