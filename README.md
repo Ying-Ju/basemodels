@@ -31,7 +31,9 @@ mean((test_data$Sepal.Length-y_hat)^2)
 # Install
 The package can be installed directly from CRAN:
 
+```
 install.packages("basemodels")
+```
 
 or directly from GitHub (<img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/github.svg"  width="15" height="15">):
 
