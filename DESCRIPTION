@@ -1,7 +1,7 @@
 Type: Package
 Package: basemodels
 Title: Baseline Models for Classification and Regression
-Version: 0.1.1
+Version: 1.1.0
 Authors@R: c(
     person(given = "Ying-Ju", 
     family = "Chen", 
